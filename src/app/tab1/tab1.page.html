@@ -1,17 +1,100 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Tab 1
+    <ion-title align="center">
+      <ion-icon name="restaurant-outline" item-start></ion-icon>
+      <ion-icon name="wine-outline" item-start></ion-icon>
+
+      Cook Book
+
+      <ion-icon name="restaurant-outline" item-start></ion-icon>
+      <ion-icon name="wine-outline" item-start></ion-icon>
+
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  <!-- <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">.</ion-title>
+    </ion-toolbar>
+  </ion-header> -->
+  <!-- <app-explore-container name="Tab 1 page (Container)"> -->
+  <app-explore-container>
+
+
+
+
+
+
+  </app-explore-container>
+
+  <ion-item>
+
+    <ion-chip color="tertiary" item-end>Yummy Power!</ion-chip>
+    <ion-badge color="warning" item-end>{{points}}</ion-badge>
+    <!-- <button ion-button full (click)="addOnePoint()">+1</button> -->
+    <ion-button color="danger" (click)="addOnePoint()">+</ion-button>
+    <ion-button color="danger" (click)="subOnePoint()">-</ion-button>
+    <ion-chip item-end color="tertiary" (click)="presentLoadingWithOptions()">Wanna EAT?</ion-chip>
+
+  </ion-item>
+
+  <!-- <ion-item> -->
+    <!-- <ion-label>Points to add</ion-label> -->
+    <!-- <ion-input type="number" [(ngModel)]="pointsToAdd"></ion-input> -->
+  <!-- </ion-item> -->
+  <ion-card>
+    <ion-item>
+      <ion-icon name="rocket-outline"></ion-icon>
+      <ion-badge color="warning" item-start>SHAKSHUKA</ion-badge>
+    </ion-item>
+  </ion-card>
+
+
+  <ion-card>
+    <ion-chip color="medium" (click)="toMetric()">METRIC</ion-chip>
+    <ion-chip color="secondary" (click)="toUsCustom()">US CUSTOM</ion-chip>
+  </ion-card>
+
+  <ion-card>
+    <ion-checkbox class="sm"></ion-checkbox>
+    <ion-icon color="tertiary" name="color-fill-outline"></ion-icon>
+    <!-- <ion-badge color="light" item-end>Add Ingredient</ion-badge> -->
+    <ion-input type="text"></ion-input>
+  </ion-card>
+
+  <ion-card>
+    <ion-checkbox class="sm"></ion-checkbox>
+    <ion-icon color="tertiary" name="color-fill-outline"></ion-icon>
+    <!-- <ion-badge color="light" item-end>Add Ingredient</ion-badge> -->
+    <ion-input type="text"></ion-input>
+  </ion-card>
+
+  <ion-card>
+    <ion-checkbox class="sm"></ion-checkbox>
+    <ion-icon color="tertiary" name="color-fill-outline"></ion-icon>
+    <!-- <ion-badge color="light" item-end>Add Ingredient</ion-badge> -->
+    <ion-input type="text"></ion-input>
+  </ion-card>
+
+
+  <ion-card>
+    <ion-item>
+      <ion-icon name="hammer-outline"></ion-icon>
+      <ion-badge color="warning" item-start>INSTRUCTIONS</ion-badge>
+    </ion-item>
+  </ion-card>
+
+  <ion-card>
+
+    <ion-title>
+      NUTRITON FACTS
+    </ion-title>
+
+  </ion-card>
+
+
+
 </ion-content>
