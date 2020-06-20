@@ -13,6 +13,8 @@ export class Tab1Page implements OnInit {
 
   public points:number;
   public pointsToAdd:number;
+  foodItem:string = "Schakschuka";
+  unit:string = "US CUSTOM";
 
   constructor(private loadingController: LoadingController) {
     this.points = 0;
@@ -26,6 +28,15 @@ export class Tab1Page implements OnInit {
   }
 
   underline(){
+
+  }
+
+  toggleUnit(){
+    if(this.unit=="US CUSTOM"){
+      this.unit = "METRIC";
+    } else {
+      this.unit = "US CUSTOM";
+    }
 
   }
 

@@ -48,14 +48,16 @@
   <ion-card>
     <ion-item>
       <ion-icon name="rocket-outline"></ion-icon>
-      <ion-badge color="warning" item-start>SHAKSHUKA</ion-badge>
+      <ion-badge color="warning" item-start>{{foodItem}}</ion-badge>
+      <!-- <h1>{{foodItem}}</h1> -->
     </ion-item>
   </ion-card>
 
 
   <ion-card>
-    <ion-chip color="medium" (click)="toMetric()">METRIC</ion-chip>
-    <ion-chip color="secondary" (click)="toUsCustom()">US CUSTOM</ion-chip>
+    <!-- <ion-chip color="medium" (click)="toMetric()">{{METRIC}}</ion-chip> -->
+    <ion-chip color="secondary" (click)="toUsCustom()">TOGGLE UNIT</ion-chip>
+    <ion-chip color="tertiary" (click)="toggleUnit()">{{unit}}</ion-chip>
   </ion-card>
 
   <ion-card>
